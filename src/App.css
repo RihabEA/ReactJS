@@ -1,34 +1,49 @@
 /* App.css */
 
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  font-family: system-ui;
+    font-family: system-ui;
 }
 
 nav {
-  padding: 10px;
-  margin-bottom: 10px;
-  background: steelblue;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: steelblue;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 li {
-  display: inline;
-  margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 a {
-  text-decoration: none !important;
-  color: white !important;
+    text-decoration: none !important;
+    color: white !important;
 }
 
 a:hover {
-  color: darkblue !important;
+    color: darkblue !important;
+}
+
+.solid {
+    border-style: solid;
+    border-color: steelblue;
+    padding: 5px;
+}
+
+.vl {
+    border-left: 6px solid darkblue;
+    height: 500px;
+}
+
+.list{
+    line-height: 100px;
 }
