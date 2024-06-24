@@ -33,17 +33,6 @@ a:hover {
     color: darkblue !important;
 }
 
-.solid {
-    border-style: solid;
-    border-color: steelblue;
-    padding: 5px;
-}
-
-.vl {
-    border-left: 6px solid darkblue;
-    height: 500px;
-}
-
 .list{
-    line-height: 100px;
+    line-height: 100px !important;
 }

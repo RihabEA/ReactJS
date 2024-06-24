@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-import Button from 'react-bootstrap/Button';
 
 function Span(next) {
     return (
         <>
-            <span className="vl solid"> {"Next"}</span>
+            <span className=" border-2 border-sky-500"> {"Next"}</span>
             {next && " -> "}
         </>
     );
@@ -14,7 +13,7 @@ function Node({value, next}) {
     return (
         <>
             <li className="mb-5 list">
-                <span className="solid"> {"Data: "}{value} </span>
+                <span className="border-2 border-sky-500"> {"Data: "}{value} </span>
                 {next !== null && <Span/>}
             </li>
             {next && <Node value={next.value} next={next.next}/>}
@@ -45,9 +44,9 @@ function LinkedList() {
                 </ul>
             </div>
             <div>
-                <Button className="ms-4 mt-5" variant="outline-primary" size="md"
+                <button className="ml-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                         onClick={() => addNode(Math.random())}>Add
-                    Node</Button><br/>
+                    Node</button><br/>
             </div>
         </>
 

@@ -3,37 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./components/Home";
 import LinkedList from "./components/LinkedList";
 import Tree from "./components/Tree";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import ReactQuery from "./components/ReactQuery";
+import ZustandExample from "./components/ZustandExample";
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />,
-        children: [
-            {
-                path: '/',
-                element: <Home />,
-            },
-            {
-                path: '/linkedList',
-                element: <LinkedList />,
-            },
-            {
-                path: '/tree',
-                element: <Tree />,
-            }
-        ]
-    }
-]);
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <RouterProvider router={router}>
-        <App />
-    </RouterProvider>
-)
-
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
+);
