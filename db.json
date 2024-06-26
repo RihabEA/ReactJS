@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Rihab El Amine1",
+      "email": "rihab-elamine@hotmail.com",
+      "phone": "71410569"
+    },
+    {
+      "id": 2,
+      "name": "Rihab El Amine2",
+      "email": "rihab-elamine@hotmail.com",
+      "phone": "71410569"
+    },
+    {
+      "id": 3,
+      "name": "Rihab El Amine3",
+      "email": "rihab-elamine@hotmail.com",
+      "phone": "71410569"
+    },
+    {
+      "id": 4,
+      "name": "Rihab El Amine4",
+      "email": "rihab-elamine@hotmail.com",
+      "phone": "71410569"
+    }
+  ]
+}
